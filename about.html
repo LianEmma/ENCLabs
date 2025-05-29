@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="testimonial.css">
     <link rel="stylesheet" href="mediascreen.css">
+    <link rel="stylesheet" href="about.css">
 </head>
 <body>
     <main>
@@ -27,9 +28,16 @@
              <div class="about-hero padd">
                 <div class="content">
                   <div class="content-cont">
-                      <h1>Countless Solutions for Your Brands</h1>
-                    <p>All the services gather here <br> feel the chill to get started on dreams now.</p>
-                    <button>Get Started</button>
+                      <h1>Empowering Vision, Building Impact</h1>
+                    <p>
+                            At ENC Labs, we are more than just a tech company — we are a team of passionate
+                             innovators dedicated to delivering transformative digital solutions.
+                              <br> Our mission 
+                             is rooted in creativity, integrity, and purpose,
+                            driving us to build meaningful technology that empowers communities, 
+                            businesses, and people.
+                          </p>
+                    <button class="AbtHeroBtn">Get Started</button>
                   </div>
                         
                 </div>
@@ -97,7 +105,7 @@
                 </p>
             </div>
 
-            <a href="#">dive in</a>
+            <a href="contact.html">dive in</a>
         </div>
     </section>
 
@@ -156,5 +164,11 @@
 
       <script src="script.js"></script>
         <script src="fontawesome-free-6.1.2-web/js/all.js"></script>
+        <script>
+            let AbtHeroBtn = document.querySelector(".AbtHeroBtn");
+            AbtHeroBtn.addEventListener("click",()=>{
+                window.location.href = "contact.html"
+            })
+        </script>
    </body>
 </html>
