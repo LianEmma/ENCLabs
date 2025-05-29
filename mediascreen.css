@@ -230,3 +230,15 @@
         margin-top: 6rem;
     } */
 }
+
+@media screen and (max-width: 480px) {
+    .hero{
+        flex-direction: column-reverse;
+        min-height: 80dvh;
+    }
+
+    /* .about{
+        min-height: 80dvh;
+    } */
+
+}
