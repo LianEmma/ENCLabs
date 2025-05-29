@@ -9,6 +9,10 @@
     --gray-800: #1e293b;
 }
 
+#bars{
+    display: none;
+}
+
 
 .contact-header nav a{
     color: #171f30;
@@ -214,6 +218,32 @@ form textarea{
 }
 
 @media screen and (max-width: 560px) {
+    #bars{
+    display: block;
+  }
+
+  nav{
+        padding: 12px;
+        position: relative;
+    }
+    nav .links{
+        width: 200px;
+        position: absolute;
+        top: 50px;
+        right: -220px;
+        justify-content: left;
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        box-shadow: 0px 4px 6px #333;
+        transition: 0.5s ease;
+    }
+
+    nav .links.active{
+        right: 20px;
+    }
+    
     .form-container{
         flex-direction: column;
         padding: 12px;
